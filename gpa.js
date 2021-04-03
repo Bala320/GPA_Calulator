@@ -1,6 +1,6 @@
 
-    function gpa()
-    {
+         function gpa()
+         {
         var cr1=Number(document.getElementById("course1").value);
         var gr1=document.getElementById("gcourse1").value;
         var cr2=Number(document.getElementById("course2").value);
@@ -21,6 +21,7 @@
        var gpaa1,gpaa2,gpaa3,gpaa4,gpaa5,gpaa6,gpaa7,gpaa8;
        var totgpa=0;
        var totcr=0;
+  
 if(cr1!="Select"&&gr1!="Select"){
     switch(gr1)
     {

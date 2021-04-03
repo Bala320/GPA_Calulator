@@ -4,7 +4,7 @@
     <head>
         <style>
             table, th, td {
-                border: 1px solid red;
+                border: 1px solid rgb(245, 51, 252);
                 font-size: 28px;
                 
                            }
@@ -19,12 +19,40 @@
                                     .button
                                     {
                                         position: absolute;
-                                        top: 75%;
-                                        left: 40%;
+                                        top: 85%;
+                                        left: 33%;
+                                        background-color: #ff7b00;
+                                        font-size: 25px;
+                                        color: #FFFFFF;
+                                        padding: 20px;
+                                        width: 150px;
+                                       -webkit-transition-duration: 0.4s;
+                                        transition-duration: 0.4s;
+                                        text-decoration: none;
+                                        overflow: hidden;
+                                        cursor: pointer;
                                     }  
+                                    body{
+                                        background-image: url(Capture.PNG);
+                                        background-repeat:no-repeat;
+                                        height: 100%;
+                                        background-position: center;
+                                        background-size: cover;
+                                    }
+                                    h1{
+                                        text-align: center;
+                                        color: aliceblue;
+                                    }
+                                    div{
+                                         text-align: center;
+                                         margin-top: 2.3%;
+                                         margin-left: 16%;
+                                                                 
+                                    }
         </style>
         <title>Calculate GPA|</title>
         <body>
+            <h1>VIT GPA CALCULATOR</h1>
            <table align="center">
                <tr>
                    <th>
@@ -185,8 +213,8 @@
             </tr>
            </table><br>
            <button onclick="gpa()" class="button">GPA</button>
-           <div style="text-align: center;">
-           <input type="text" id="resu" style="padding: 4px" >
+           <div>
+           <input type="text" id="resu" style="font-size: 18pt; height: 50px; width:250px;" >
            </div>
         </body>
     </head>
