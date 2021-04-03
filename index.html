@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+   
+    <head>
+        <style>
+            table, th, td {
+                border: 1px solid red;
+                font-size: 28px;
+                
+                           }
+                           select {
+                        width: 150px;
+                        margin: 10px;
+                                  }
+                          select:focus {
+                        min-width: 150px;
+                        width: auto;
+                                       }
+                                    .button
+                                    {
+                                        position: absolute;
+                                        top: 75%;
+                                        left: 40%;
+                                    }  
+        </style>
+        <title>Calculate GPA|</title>
+        <body>
+           <table align="center">
+               <tr>
+                   <th>
+                       <td style="height:60px;width:100px" >Courses</td> <td style="height:50px;width:100px">Credits</td> <td style="height:50px;width:100px">Grades</td>
+                   </th>
+               </tr>
+               <tr>
+                   <th>
+                        <td style="height:30px;width:100px">Course1</td> <td><select id="course1">
+                                              <option selected>Select</option>
+                                              <option value=1>1</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                              <option>4</option>
+                        </select></td><td><select id="gcourse1">
+                                              <option selected>Select</option>
+                                              <option>S</option>
+                                              <option>A</option>
+                                              <option>B</option>
+                                              <option>C</option>
+                                              <option>D</option>
+                                              <option>E</option>
+                        </select></td>
+                   </th>
+               </tr>
+               <tr>
+                <th>
+                     <td style="height:30px;width:100px">Course2</td> <td><select id="course2">
+                                           <option selected>Select</option>
+                                           <option>1</option>
+                                           <option>2</option>
+                                           <option>3</option>
+                                           <option>4</option>
+                     </select></td><td><select id="gcourse2">
+                                           <option selected>Select</option>
+                                           <option>S</option>
+                                           <option>A</option>
+                                           <option>B</option>
+                                           <option>C</option>
+                                           <option>D</option>
+                                           <option>E</option>
+                     </select></td>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                     <td style="height:30px;width:100px">Course3</td> <td><select id="course3">
+                                           <option selected>Select</option>
+                                           <option>1</option>
+                                           <option>2</option>
+                                           <option>3</option>
+                                           <option>4</option>
+                     </select></td><td><select id="gcourse3">
+                                           <option selected>Select</option>
+                                           <option>S</option>
+                                           <option>A</option>
+                                           <option>B</option>
+                                           <option>C</option>
+                                           <option>D</option>
+                                           <option>E</option>
+                     </select></td>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                     <td style="height:30px;width:100px">Course4</td> <td><select id="course4">
+                                           <option selected>Select</option>
+                                           <option>1</option>
+                                           <option>2</option>
+                                           <option>3</option>
+                                           <option>4</option>
+                     </select></td><td><select id="gcourse4">
+                                           <option selected>Select</option>
+                                           <option>S</option>
+                                           <option>A</option>
+                                           <option>B</option>
+                                           <option>C</option>
+                                           <option>D</option>
+                                           <option>E</option>
+                     </select></td>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                     <td style="height:30px;width:100px">Course5</td> <td><select id="course5">
+                                           <option selected>Select</option>
+                                           <option>1</option>
+                                           <option>2</option>
+                                           <option>3</option>
+                                           <option>4</option>
+                     </select></td><td><select id="gcourse5">
+                                           <option selected>Select</option>
+                                           <option>S</option>
+                                           <option>A</option>
+                                           <option>B</option>
+                                           <option>C</option>
+                                           <option>D</option>
+                                           <option>E</option>
+                     </select></td>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                     <td style="height:30px;width:100px">Course6</td> <td><select id="course6">
+                                           <option selected>Select</option>
+                                           <option>1</option>
+                                           <option>2</option>
+                                           <option>3</option>
+                                           <option>4</option>
+                     </select></td><td><select id="gcourse6">
+                                           <option selected>Select</option>
+                                           <option>S</option>
+                                           <option>A</option>
+                                           <option>B</option>
+                                           <option>C</option>
+                                           <option>D</option>
+                                           <option>E</option>
+                     </select></td>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                     <td style="height:30px;width:100px">Course7</td> <td><select id="course7">
+                                           <option selected>Select</option>
+                                           <option>1</option>
+                                           <option>2</option>
+                                           <option>3</option>
+                                           <option>4</option>
+                     </select></td><td><select id="gcourse7">
+                                           <option selected>Select</option>
+                                           <option>S</option>
+                                           <option>A</option>
+                                           <option>B</option>
+                                           <option>C</option>
+                                           <option>D</option>
+                                           <option>E</option>
+                     </select></td>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                     <td style="height:30px;width:100px">Course8</td> <td><select id="course8">
+                                           <option selected>Select</option>
+                                           <option>1</option>
+                                           <option>2</option>
+                                           <option>3</option>
+                                           <option>4</option>
+                     </select></td><td><select id="gcourse8">
+                                           <option selected>Select</option>
+                                           <option>S</option>
+                                           <option>A</option>
+                                           <option>B</option>
+                                           <option>C</option>
+                                           <option>D</option>
+                                           <option>E</option>
+                     </select></td>
+                </th>
+            </tr>
+           </table><br>
+           <button onclick="gpa()" class="button">GPA</button>
+           <input type="text" id="resu">
+        </body>
+    </head>
+      <script src="gpa.js">
+      </script>
+</html>
