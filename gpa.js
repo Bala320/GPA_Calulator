@@ -21,7 +21,7 @@
        var gpaa1,gpaa2,gpaa3,gpaa4,gpaa5,gpaa6,gpaa7,gpaa8;
        var totgpa=0;
        var totcr=0;
-
+if(cr1!="Select"&&gr1!="Select"){
     switch(gr1)
     {
         case "S": 
@@ -43,6 +43,13 @@
                 gpaa1=cr1*5;
                   break;
     }
+}
+else{
+      gpaa1=0;
+      cr1=0;
+     }
+
+     if(cr2!="Select"&&gr2!="Select"){
     switch(gr2)
     {
         case "S": 
@@ -63,7 +70,13 @@
         case "E": 
                 gpaa2=cr2*5;
                   break;
+    }}
+    else{
+        gpaa2=0;
+        cr2=0;
     }
+
+    if(cr3!="Select"&&gr3!="Select"){
     switch(gr3)
     {
         case "S": 
@@ -84,7 +97,13 @@
         case "E": 
                 gpaa3=cr3*5;
                   break;
+    }}
+    else{
+        gpaa3=0;
+        cr3=0;
     }
+
+    if(cr4!="Select"&&gr4!="Select"){
     switch(gr4)
     {
         case "S": 
@@ -105,7 +124,13 @@
         case "E": 
                 gpaa4=cr4*5;
                   break;
+    }}
+    else{
+        gpaa4=0;
+        cr4=0;
     }
+
+    if(cr5!="Select"&&gr5!="Select"){
     switch(gr5)
     {
         case "S": 
@@ -126,7 +151,13 @@
         case "E": 
                 gpaa5=cr5*5;
                   break;
+    }}
+    else{
+        gpaa5=0;
+        cr5=0;
     }
+
+    if(cr6!="Select"&&gr6!="Select"){
     switch(gr6)
     {
         case "S": 
@@ -147,7 +178,13 @@
         case "E": 
                 gpaa6=cr6*5;
                   break;
+    }}
+    else{
+        gpaa6=0;
+        cr6=0;
     }
+
+    if(cr7!="Select"&&gr7!="Select"){
     switch(gr7)
     {
         case "S": 
@@ -168,7 +205,13 @@
         case "E": 
                 gpaa7=cr7*5;
                   break;
+    }}
+    else{
+        gpaa7=0;
+        cr7=0;
     }
+
+    if(cr8!="Select"&&gr8!="Select"){
     switch(gr8)
     {
         case "S": 
@@ -189,6 +232,10 @@
         case "E": 
                 gpaa8=cr8*5;
                   break;
+    }}
+    else{
+        gpaa8=0;
+        cr8=0;
     }
     
       totgpa=gpaa1+gpaa2+gpaa3+gpaa4+gpaa5+gpaa6+gpaa7+gpaa8;
