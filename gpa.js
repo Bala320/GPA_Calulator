@@ -17,8 +17,10 @@
         var gr7=document.getElementById("gcourse7").value;
         var cr8=Number(document.getElementById("course8").value);
         var gr8=document.getElementById("gcourse8").value;
+        var cr9=Number(document.getElementById("course9").value);
+        var gr9=document.getElementById("gcourse9").value;
 
-       var gpaa1,gpaa2,gpaa3,gpaa4,gpaa5,gpaa6,gpaa7,gpaa8;
+       var gpaa1,gpaa2,gpaa3,gpaa4,gpaa5,gpaa6,gpaa7,gpaa8,gpaa9;
        var totgpa=0;
        var totcr=0;
   
@@ -43,6 +45,9 @@ if(cr1!="Select"&&gr1!="Select"){
         case "E": 
                 gpaa1=cr1*5;
                   break;
+        case "F": 
+                  gpaa1=cr1*0;
+                    break;
     }
 }
 else{
@@ -71,6 +76,9 @@ else{
         case "E": 
                 gpaa2=cr2*5;
                   break;
+        case "F": 
+                  gpaa2=cr2*0;
+                    break;           
     }}
     else{
         gpaa2=0;
@@ -98,6 +106,9 @@ else{
         case "E": 
                 gpaa3=cr3*5;
                   break;
+        case "F": 
+                  gpaa3=cr3*0;
+                    break;
     }}
     else{
         gpaa3=0;
@@ -125,6 +136,9 @@ else{
         case "E": 
                 gpaa4=cr4*5;
                   break;
+        case "F": 
+                  gpaa4=cr4*0;
+                    break;
     }}
     else{
         gpaa4=0;
@@ -152,6 +166,9 @@ else{
         case "E": 
                 gpaa5=cr5*5;
                   break;
+        case "F": 
+                  gpaa5=cr5*0;
+                    break;
     }}
     else{
         gpaa5=0;
@@ -179,6 +196,9 @@ else{
         case "E": 
                 gpaa6=cr6*5;
                   break;
+        case "F": 
+                  gpaa6=cr6*0;
+                    break;
     }}
     else{
         gpaa6=0;
@@ -206,6 +226,9 @@ else{
         case "E": 
                 gpaa7=cr7*5;
                   break;
+        case "F": 
+                  gpaa7=cr7*0;
+                    break;
     }}
     else{
         gpaa7=0;
@@ -233,13 +256,48 @@ else{
         case "E": 
                 gpaa8=cr8*5;
                   break;
-    }}
+        case "F": 
+                  gpaa8=cr8*0;
+                    break;
+    }
+  }
     else{
         gpaa8=0;
         cr8=0;
     }
+
+    if(cr9!="Select"&&gr9!="Select"){
+      switch(gr9)
+      {
+          case "S": 
+                  gpaa9=cr9*10;
+                    break;
+          case "A": 
+                  gpaa9=cr9*9;
+                    break;
+          case "B": 
+                    gpaa8=cr8*8;
+                      break;
+          case "C": 
+                  gpaa9=cr9*7;
+                    break;
+          case "D": 
+                  gpaa9=cr9*6;
+                    break;
+          case "E": 
+                  gpaa9=cr9*5;
+                    break;
+          case "F": 
+                    gpaa9=cr9*0;
+                      break;
+      }
+    }
+      else{
+          gpaa9=0;
+          cr9=0;
+      }
     
-      totgpa=gpaa1+gpaa2+gpaa3+gpaa4+gpaa5+gpaa6+gpaa7+gpaa8;
-     totcr=cr1+cr2+cr3+cr4+cr5+cr6+cr7+cr8;
+      totgpa=gpaa1+gpaa2+gpaa3+gpaa4+gpaa5+gpaa6+gpaa7+gpaa8+gpaa9;
+     totcr=cr1+cr2+cr3+cr4+cr5+cr6+cr7+cr8+cr9;
      document.getElementById("resu").value=totgpa/totcr;
     }
