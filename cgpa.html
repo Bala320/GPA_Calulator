@@ -4,6 +4,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
                    <link rel="stylesheet" href="style.css">
+                   <style>
+                       * {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+                   </style>
             
             <title>Calculate CGPA|</title>
             </head>
@@ -13,7 +57,7 @@
                   <h1 style="color:#5704c2; display: inline;">CGPA </h1>
                   <h1 style="color:rgb(252, 255, 53); display: inline;">CALCUATOR</h1> 
                 <hr style="clear:both; width: 75%;"><br>
-
+                <div style="overflow-x:auto;">
                <table align="center" class="table1">
                        <th class="hedi; th1">
                            <td style="height:60px;width: 160px; color: yellow;border: 1px solid rgb(252, 255, 53);" > </td>
@@ -90,7 +134,7 @@
                     </th>
                 </tr>
                
-               </table><br>
+               </table></div><br>
              
                <table align="center" class="table1">
                 <tr>
