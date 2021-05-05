@@ -3,68 +3,30 @@
    
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            table, th, td {
-                border: 1px solid rgb(245, 51, 252);
-                font-size: 28px;
-                
-                           }
-                           select {
-                        width: 150px;
-                        margin: 10px;
-                                  }
-                          select:focus {
-                        min-width: 150px;
-                        width: auto;
-                                       }
-                                    .button
-                                    {
-                                        position: absolute;
-                                        top: 91%;
-                                        left: 33%;
-                                        background-color: #ff7b00;
-                                        font-size: 25px;
-                                        color: #FFFFFF;
-                                        padding: 20px;
-                                        width: 150px;
-                                       -webkit-transition-duration: 0.4s;
-                                        transition-duration: 0.4s;
-                                        text-decoration: none;
-                                        overflow: hidden;
-                                        cursor: pointer;
-                                    }  
-                                    body{
-                                       background-color: #0414c4;
-                                        background-repeat:no-repeat;
-                                        height: 100%;
-                                        background-position: center;
-                                        background-size: cover;
-                                    }
-                                    h1{
-                                        text-align: center;
-                                        color: aliceblue;
-                                    }
-                                    div{
-                                         text-align: center;
-                                         margin-top: 2.3%;
-                                         margin-left: 16%;
-                                                                 
-                                    }
-        </style>
-        <title>Calculate GPA|</title>
     
+               <link rel="stylesheet" href="style.css">
+        
+        <title>Calculate GPA|</title>
         </head>
-        <body>
-            <h1>VIT GPA CALCULATOR</h1>
+        <body><br>
+            <div style="clear: both">
+              <h1 style="display: inline;">VIT </h1>
+              <h1 style="color:rgb(255, 22, 22); display: inline;">GPA </h1>
+              <h1 style="color:rgb(252, 255, 53); display: inline;">CALCUATOR</h1> 
+            <hr style="clear:both; width: 75%;"><br>
            <table align="center">
-               <tr>
-                   <th>
-                       <td style="height:60px;width:100px;color: yellow;" >Courses</td> <td style="height:50px;width:100px;color: yellow;">Credits</td> <td style="height:50px;width:100px;color: yellow;">Grades</td>
+               
+                   <th class="hedi">
+                       <td style="height:60px;width: 160px; color: yellow;" >Courses</td>
+                        <td style="height:50px;width:100px;color: yellow;">Credits</td> 
+                        <td style="height:50px;width:100px;color: yellow;">Grades</td>
                    </th>
-               </tr>
+               
                <tr>
                    <th>
-                        <td style="height:30px;width:100px;color: white;">Course1</td> <td><select id="course1">
+                        <td style="color: white; width: 120px;">Course 1</td><td>
+                                         <div class="dropdown">
+                                             <select id="course1" class="dropbtn">
                                               <option selected>Select</option>
                                               <option value=1>1</option>
                                               <option>2</option>
@@ -72,7 +34,10 @@
                                               <option>4</option>
                                               <option>5</option>
                                               <option>20</option>
-                        </select></td><td><select id="gcourse1">
+                                             </div>
+                             </select></td><td>
+                                            <div class="dropdown">
+                                              <select id="gcourse1" class="dropbtn">
                                               <option selected>Select</option>
                                               <option>S</option>
                                               <option>A</option>
@@ -81,20 +46,24 @@
                                               <option>D</option>
                                               <option>E</option>
                                               <option>F</option>
+                                              </div>
                         </select></td>
                    </th>
                </tr>
                <tr>
                 <th>
-                     <td style="height:30px;width:100px;color: #FFFFFF;">Course2</td> <td><select id="course2">
+                     <td style="height:30px;width:180px;color: #FFFFFF;">Course 2</td> <td>
+                        <div class="dropdown">
+                         <select id="course2" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>1</option>
                                            <option>2</option>
                                            <option>3</option>
                                            <option>4</option>
                                            <option>5</option>
-                                           <option>20</option>
-                     </select></td><td><select id="gcourse2">
+                                           <option>20</option></div>
+                     </select></td><td> <div class="dropdown">
+                         <select id="gcourse2" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>S</option>
                                            <option>A</option>
@@ -102,21 +71,23 @@
                                            <option>C</option>
                                            <option>D</option>
                                            <option>E</option>
-                                           <option>F</option>
+                                           <option>F</option></div>
                      </select></td>
                 </th>
             </tr>
             <tr>
                 <th>
-                     <td style="height:30px;width:100px;color: #FFFFFF;">Course3</td> <td><select id="course3">
+                     <td style="height:30px;width:100px;color: #FFFFFF;">Course 3</td> <td><div class="dropdown">
+                                     <select id="course3" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>1</option>
                                            <option>2</option>
                                            <option>3</option>
                                            <option>4</option>
                                            <option>5</option>
-                                           <option>20</option>
-                     </select></td><td><select id="gcourse3">
+                                           <option>20</option></div>
+                     </select></td><td> <div class="dropdown">
+                                      <select id="gcourse3" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>S</option>
                                            <option>A</option>
@@ -124,21 +95,22 @@
                                            <option>C</option>
                                            <option>D</option>
                                            <option>E</option>
-                                           <option>F</option>
+                                           <option>F</option></div>
                      </select></td>
                 </th>
             </tr>
             <tr>
                 <th>
-                     <td style="height:30px;width:100px;color: #FFFFFF;">Course4</td> <td><select id="course4">
+                     <td style="height:30px;width:100px;color: #FFFFFF;">Course 4</td> <td><div class="dropdown">
+                         <select id="course4" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>1</option>
                                            <option>2</option>
                                            <option>3</option>
                                            <option>4</option>
                                            <option>5</option>
-                                           <option>20</option>
-                     </select></td><td><select id="gcourse4">
+                                           <option>20</option></div>
+                     </select></td><td><div class="dropdown"><select id="gcourse4" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>S</option>
                                            <option>A</option>
@@ -146,21 +118,23 @@
                                            <option>C</option>
                                            <option>D</option>
                                            <option>E</option>
-                                           <option>F</option>
+                                           <option>F</option></div>
                      </select></td>
                 </th>
             </tr>
             <tr>
                 <th>
-                     <td style="height:30px;width:100px;color: #FFFFFF;">Course5</td> <td><select id="course5">
+                     <td style="height:30px;width:100px;color: #FFFFFF;">Course 5</td> <td><div class="dropdown">
+                                       <select id="course5" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>1</option>
                                            <option>2</option>
                                            <option>3</option>
                                            <option>4</option>
                                            <option>5</option>
-                                           <option>20</option>
-                     </select></td><td><select id="gcourse5">
+                                           <option>20</option></div>
+                     </select></td><td><div class="dropdown">
+                                         <select id="gcourse5" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>S</option>
                                            <option>A</option>
@@ -168,21 +142,22 @@
                                            <option>C</option>
                                            <option>D</option>
                                            <option>E</option>
-                                           <option>F</option>
+                                           <option>F</option></btn>
                      </select></td>
                 </th>
             </tr>
             <tr>
                 <th>
-                     <td style="height:30px;width:100px;color: #FFFFFF;">Course6</td> <td><select id="course6">
+                     <td style="height:30px;width:100px;color: #FFFFFF;">Course 6</td> <td><div class="dropdown">
+                                        <select id="course6" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>1</option>
                                            <option>2</option>
                                            <option>3</option>
                                            <option>4</option>
                                            <option>5</option>
-                                           <option>20</option>
-                     </select></td><td><select id="gcourse6">
+                                           <option>20</option></div>
+                     </select></td><td><div class="dropdown"><select id="gcourse6" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>S</option>
                                            <option>A</option>
@@ -190,21 +165,23 @@
                                            <option>C</option>
                                            <option>D</option>
                                            <option>E</option>
-                                           <option>F</option>
+                                           <option>F</option></div>
                      </select></td>
                 </th>
             </tr>
             <tr>
                 <th>
-                     <td style="height:30px;width:100px;color: #FFFFFF;">Course7</td> <td><select id="course7">
+                     <td style="height:30px;width:100px;color: #FFFFFF;">Course 7</td> <td><div class="dropdown">
+                                    <select id="course7" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>1</option>
                                            <option>2</option>
                                            <option>3</option>
                                            <option>4</option>
                                            <option>5</option>
-                                           <option>20</option>
-                     </select></td><td><select id="gcourse7">
+                                           <option>20</option></div>
+                     </select></td><td><div class="dropdown">
+                                       <select id="gcourse7" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>S</option>
                                            <option>A</option>
@@ -212,21 +189,22 @@
                                            <option>C</option>
                                            <option>D</option>
                                            <option>E</option>
-                                           <option>F</option>
+                                           <option>F</option></div>
                      </select></td>
                 </th>
             </tr>
             <tr>
                 <th>
-                     <td style="height:30px;width:100px;color: #FFFFFF;">Course8</td> <td><select id="course8">
+                     <td style="height:30px;width:100px;color: #FFFFFF;">Course 8</td> <td><div class="dropdown">
+                                         <select id="course8" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>1</option>
                                            <option>2</option>
                                            <option>3</option>
                                            <option>4</option>
                                            <option>5</option>
-                                           <option>20</option>
-                     </select></td><td><select id="gcourse8">
+                                           <option>20</option></div>
+                     </select></td><td><div class="dropdown"><select id="gcourse8" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>S</option>
                                            <option>A</option>
@@ -234,21 +212,22 @@
                                            <option>C</option>
                                            <option>D</option>
                                            <option>E</option>
-                                           <option>F</option>
+                                           <option>F</option></div>
                      </select></td>
                 </th>
             </tr>
             <tr>
                 <th>
-                     <td style="height:30px;width:100px;color: #FFFFFF;">Course9</td> <td><select id="course9">
+                     <td style="height:30px;width:100px;color: #FFFFFF;">Course 9</td> <td><div class="dropdown">
+                                           <select id="course9" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>1</option>
                                            <option>2</option>
                                            <option>3</option>
                                            <option>4</option>
                                            <option>5</option>
-                                           <option>20</option>
-                     </select></td><td><select id="gcourse9">
+                                           <option>20</option></div>
+                     </select></td><td><div class="dropdown"><select id="gcourse9" class="dropbtn">
                                            <option selected>Select</option>
                                            <option>S</option>
                                            <option>A</option>
@@ -256,16 +235,58 @@
                                            <option>C</option>
                                            <option>D</option>
                                            <option>E</option>
-                                           <option>F</option>
+                                           <option>F</option></div>
                      </select></td>
                 </th>
             </tr>
            </table><br>
-           <button onclick="gpa()" class="button">GPA</button>
-           <div>
-           <input type="text" id="resu" style="font-size: 18pt; height: 50px; width:250px;" >
-           </div>
+         
+           <table align="center">
+            <tr>
+                <th>
+                    <td ><button onclick="gpa()" class="button1">GPA</button></td>
+                     <td><div>
+                         <input type="text" id="resu" style="font-size: 18pt; height: 50px; width:250px;" >
+                         </div></td>
+                </th>                 
+            </tr>
+           </table><br>
+           <table align="center">
+            <tr>
+                    <td>
+                    <button type="button" id="clearb" class="bot">CLEAR</button>
+                </td></tr>
+           </table><br>
+           
+           <a href="cgpa.html"><button type="button" class="butn1">CGPA &#8594</button></a><br><br><br>
+           <hr style="height:2px"><br>
+           <h1 style="display: inline;">Creator: </h1>
+           <h1 style="color:rgb(255, 252, 53); display: inline;">M. BALASUBRAMANIYAN </h1>
+           <h1 style="color:rgb(255, 109, 98); display: inline;">- 19BCN7193</h1>
+
         </body>
       <script src="gpa.js">
+      </script>
+      <script>
+        document.getElementById('clearb').addEventListener('click',()=> {
+        document.getElementById('resu').value='';
+        document.getElementById("course1").value="Select";
+        document.getElementById("gcourse1").value="Select";
+        document.getElementById("course2").value="Select";
+        document.getElementById("gcourse2").value="Select";
+        document.getElementById("course3").value="Select";
+        document.getElementById("gcourse3").value="Select";
+        document.getElementById("course4").value="Select";
+        document.getElementById("gcourse4").value="Select";
+        document.getElementById("course5").value="Select";
+        document.getElementById("gcourse5").value="Select";
+        document.getElementById("course6").value="Select";
+        document.getElementById("gcourse6").value="Select";
+        document.getElementById("course7").value="Select";
+        document.getElementById("gcourse7").value="Select";
+        document.getElementById("course8").value="Select";
+        document.getElementById("gcourse8").value="Select";
+        document.getElementById("course9").value="Select";
+        document.getElementById("gcourse9").value="Select";})
       </script>
 </html>

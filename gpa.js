@@ -19,12 +19,14 @@
         var gr8=document.getElementById("gcourse8").value;
         var cr9=Number(document.getElementById("course9").value);
         var gr9=document.getElementById("gcourse9").value;
-
+       
        var gpaa1,gpaa2,gpaa3,gpaa4,gpaa5,gpaa6,gpaa7,gpaa8,gpaa9;
        var totgpa=0;
        var totcr=0;
-  
-if(cr1!="Select"&&gr1!="Select"){
+       
+       
+if(cr1!="Select"&&gr1!="Select")
+{
     switch(gr1)
     {
         case "S": 
@@ -50,7 +52,8 @@ if(cr1!="Select"&&gr1!="Select"){
                     break;
     }
 }
-else{
+else 
+{
       gpaa1=0;
       cr1=0;
      }
@@ -295,9 +298,18 @@ else{
       else{
           gpaa9=0;
           cr9=0;
-      }
-    
+      }    
+      /*if(document.getElementById("resu").value="NaN")
+       {
+         alert("Kindly fill Respective Grade or Credit!!!");
+       }*/
       totgpa=gpaa1+gpaa2+gpaa3+gpaa4+gpaa5+gpaa6+gpaa7+gpaa8+gpaa9;
      totcr=cr1+cr2+cr3+cr4+cr5+cr6+cr7+cr8+cr9;
-     document.getElementById("resu").value=totgpa/totcr;
+     document.getElementById("resu").value= totgpa/totcr;
     }
+
+    
+
+  
+    
+      
