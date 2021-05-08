@@ -50,8 +50,8 @@
                                           color: #FFFFFF;
                                           padding: 15px;
                                           width: 150px;
-                                         -webkit-transition-duration: 0.4s;
-                                          transition-duration: 0.4s;
+                                         -webkit-transition-duration: 0.3s;
+                                          transition-duration: 0.3s;
                                           text-decoration: none;
                                           overflow: hidden;
                                           cursor: pointer;
@@ -71,11 +71,13 @@
                                          left: 50%;
                                          padding: 10px;
                                         width: 150px; 
+                                        -webkit-transition-duration: 0.3s;
+                                          transition-duration: 0.3s;
                                         cursor: pointer;
                                     } 
                                     .bot:hover
                                     {
-                                        background-color: #ffa0a0;
+                                        background-color: #ff6a6a;
                                         color: white;
                                     }
                                     .bot1
@@ -88,11 +90,13 @@
                                          left: 50%;
                                          padding: 10px;
                                         width: 150px; 
+                                        -webkit-transition-duration: 0.3s;
+                                          transition-duration: 0.3s;
                                         cursor: pointer;
                                     } 
                                     .bot1:hover
                                     {
-                                        background-color:#99ff7a; 
+                                        background-color:hsl(59, 100%, 69%); 
                                         
                                     }
                                     .butn1
@@ -106,6 +110,8 @@
                                         width: 150px; 
                                         color: white;
                                         cursor: pointer;
+                                        -webkit-transition-duration: 0.3s;
+                                          transition-duration: 0.3s;
                                         font-family: "Lucida Console", "Courier New", monospace;
                                     }
                                     .butn1:hover
@@ -124,6 +130,8 @@
                                         width: 150px; 
                                         color: white;
                                         cursor: pointer;
+                                        -webkit-transition-duration: 0.3s;
+                                          transition-duration: 0.3s;
                                         font-family: "Lucida Console", "Courier New", monospace;
                                     }
                                     .butn2:hover
