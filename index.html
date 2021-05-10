@@ -15,6 +15,7 @@
         <link rel="icon" type="image/png" href="Capture.PNG">
         </head>
         <body><br>
+            <?php include 'dark.php';?>
             <div style="clear: both">
               <h1 style="display: inline;">VIT </h1>
               <h1 style="color:rgb(255, 22, 22); display: inline;">GPA </h1>
@@ -271,10 +272,16 @@
            <h1 style="display: inline;">Creator: </h1>
            <h1 style="color:rgb(255, 252, 53); display: inline;">M. BALASUBRAMANIYAN </h1>
            <h1 style="color:rgb(255, 109, 98); display: inline;">- 19BCN7193</h1>
-
+           <button onclick="myFunction()">Toggle dark mode</button>
         </body>
       <script src="gpa.js">
       </script>
+       <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
       <script>
         document.getElementById('clearb').addEventListener('click',()=> {
         document.getElementById('resu').value='';
