@@ -35,18 +35,18 @@
                                     .button1
                                     {
                                        /* position: absolute;*/
-                                        top: 91%;
-                                        left: 33%;
-                                        background-color: #ff810a;
-                                        font-size: 25px;
-                                        color: #FFFFFF;
-                                        padding: 15px;
-                                        width: 150px;
-                                       -webkit-transition-duration: 0.4s;
-                                        transition-duration: 0.4s;
-                                        text-decoration: none;
-                                        overflow: hidden;
-                                        cursor: pointer;
+                                       top: 91%;
+                                       left: 33%;
+                                       background-color: #ff810a;
+                                       font-size: 25px;
+                                       color: #FFFFFF;
+                                       padding: 15px;
+                                       width: 150px;
+                                      -webkit-transition-duration: 0.4s;
+                                       transition-duration: 0.4s;
+                                       text-decoration: none;
+                                       overflow: hidden;
+                                       cursor: pointer;
                                     } 
                                     .button1:hover 
                                     {
