@@ -269,7 +269,8 @@ else
         cr8=0;
     }
 
-    if(cr9!="Select"&&gr9!="Select"){
+    if(cr9!="Select"&&gr9!="Select")
+    {
       switch(gr9)
       {
           case "S": 
@@ -279,7 +280,7 @@ else
                   gpaa9=cr9*9;
                     break;
           case "B": 
-                    gpaa8=cr8*8;
+                    gpaa9=cr9*8;
                       break;
           case "C": 
                   gpaa9=cr9*7;
@@ -295,7 +296,8 @@ else
                       break;
       }
     }
-      else{
+      else
+      {
           gpaa9=0;
           cr9=0;
       }    
@@ -303,6 +305,7 @@ else
        {
          alert("Kindly fill Respective Grade or Credit!!!");
        }*/
+       
       totgpa=gpaa1+gpaa2+gpaa3+gpaa4+gpaa5+gpaa6+gpaa7+gpaa8+gpaa9;
      totcr=cr1+cr2+cr3+cr4+cr5+cr6+cr7+cr8+cr9;
      document.getElementById("resu").value= totgpa/totcr;
