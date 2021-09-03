@@ -311,6 +311,12 @@ else
      document.getElementById("resu").value= totgpa/totcr;
     }
 
+    $(function(){
+      $(".dropdown-menu").on('click', 'a', function(){
+          $(this).parents('.dropdown').find('button').text($(this).text());
+      });
+   });
+
     
 
   
